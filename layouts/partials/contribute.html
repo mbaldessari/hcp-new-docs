@@ -1,0 +1,9 @@
+<ul class="pa0">
+  {{ range .Site.Menus.contribute }}
+    <li class="list">
+      <a href="{{ .URL }}" class="link f5 grow no-underline ph3 pv1 dib black sans-serif">
+        {{- .Name -}}
+      </a>
+    </li>
+  {{ end }}
+</ul>

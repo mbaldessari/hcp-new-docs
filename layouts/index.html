@@ -1,0 +1,18 @@
+{{ define "main" }}
+ <article class="cf ph3 ph5-l pv3 pv4-l f5 center w-80-ns lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+    {{ .Content }}
+  </article>
+  <div class="pa3 pa4-ns w-100 w-75-ns center">
+    <h1 class="flex-none">Latest Patterns</h1>
+      <section class="w-100 mw8">
+        {{ $section := where $.Site.RegularPages "Section" "patterns"}}
+        <section class="flex-ns flex-wrap justify-around mt5">
+        {{ range (first 3 $section) }}
+          <div class="relative w-30 bg-white mb4 ml3 mr3">
+            {{ .Render "summary-with-image" }}
+          </div>
+        {{ end }}
+      </section>
+      </section>
+    </div>
+{{ end }}
