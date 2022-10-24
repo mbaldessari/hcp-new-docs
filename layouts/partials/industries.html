@@ -1,10 +1,17 @@
-<h1 class="f3 fw1 athelas mt0 lh-title">Industries:</h1>
-<ul class="pa0">
-  {{ range $name, $taxonomy := .Site.Taxonomies.industries }}
-   <li class="list">
-     <a href="{{ "/industries/" | relLangURL }}{{ $name | urlize }}" class="link f5 grow no-underline ph3 pv1 dib black sans-serif">
-       {{- $name | humanize | title -}}
-     </a>
-   </li>
-  {{ end }}
-</ul>
+<div class="pf-c-panel" style="margin-bottom: 1em">
+  <div class="pf-c-panel__header">Industries</div>
+  <hr class="pf-c-divider" />
+  <div class="pf-c-panel__main">
+    <div class="pf-c-panel__main-body">
+    <ul class="pf-c-list">
+      {{ range $name, $taxonomy := .Site.Taxonomies.industries }}
+       <li>
+         <a href="{{ "/industries/" | relLangURL }}{{ $name | urlize }}">
+           {{- $name | humanize | title  -}}
+         </a>
+       </li>
+      {{ end }}
+    </ul>
+    </div>
+  </div>
+</div>

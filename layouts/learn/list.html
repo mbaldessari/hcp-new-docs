@@ -1,22 +1,30 @@
 {{ define "main" }}
-  <article class="pa3 pa4-ns nested-copy-line-height">
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
-      {{- .Content -}}
-    </section>
-    <section class="mt5">
-      <div class="flex">
-      <div class="fl w-25">
-        {{ partial "learn.html" . }}
+<div class="pf-c-page__sidebar">
+  <div class="pf-c-page__sidebar-body">
+    {{ partial "learn.html" . }}
+  </div>
+</div>
+<main class="pf-c-page__main" >
+  <section class="pf-c-page__main-section">
+    <div class="pf-l-stack pf-u-text-align-center">
+      <div class="pf-c-content" style="--pf-c-content--FontSize: 1.25rem;">
+        {{ .Content }}
       </div>
-      <div class="flex flex-wrap w-75">
-      {{ range .Paginator.Pages }}
-        <div class="fl w-30 ma2 bg-white">
-          {{ .Render "summary" }}
+    </div>
+  </section>
+  <section class="pf-c-page__main-section">
+    <div class="pf-l-stack">
+      <div class="pf-c-content" >
+        <div class="pf-l-gallery pf-m-gutter" style="--pf-l-gallery--GridTemplateColumns--min: 300px;">
+          {{ range .Paginator.Pages }}
+          <div class="pf-l-gallery__item" style="display: grid;">
+            {{ .Render "summary" }}
+          </div>
+          {{ end }}
         </div>
-      {{ end }}
-      {{- template "_internal/pagination.html" . -}}
       </div>
-      </div>
-    </section>
-  </article>
+    {{- template "_internal/pagination.html" . -}}
+    </div>
+  </section>
+</main>
 {{ end }}

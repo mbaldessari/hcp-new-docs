@@ -1,13 +1,13 @@
 <div class="pf-c-panel" style="margin-bottom: 1em">
-  <div class="pf-c-panel__header">Products</div>
+  <div class="pf-c-panel__header">Blog Tags</div>
   <hr class="pf-c-divider" />
   <div class="pf-c-panel__main">
     <div class="pf-c-panel__main-body">
     <ul class="pf-c-list">
-      {{ range $name, $taxonomy := .Site.Taxonomies.products }}
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
        <li>
-         <a href="{{ "/products/" | relLangURL }}{{ $name | urlize }}">
-           {{- $name | humanize | title  -}}
+         <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">
+           {{- $name -}}
          </a>
        </li>
       {{ end }}

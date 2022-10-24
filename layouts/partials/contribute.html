@@ -1,9 +1,11 @@
-<ul class="pa0">
-  {{ range .Site.Menus.contribute }}
-    <li class="list">
-      <a href="{{ .URL }}" class="link f5 grow no-underline ph3 pv1 dib black sans-serif">
-        {{- .Name -}}
-      </a>
-    </li>
-  {{ end }}
-</ul>
+<div class="pf-c-nav">
+  <ul class="pf-c-nav__list">
+    {{ range .Site.Menus.contribute }}
+      <li class="pf-c-nav__item">
+        <a href="{{ .URL }}" class="pf-c-nav__link">
+          {{- .Name -}}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
