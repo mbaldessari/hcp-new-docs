@@ -10,7 +10,7 @@ industries:
 - Cloud Service Providers
 use_cases:
 - Multisite
-pattern_status: Validated
+validated: true
 tested_on:
 - OpenShift 4.11
 - OpenShift 4.10
