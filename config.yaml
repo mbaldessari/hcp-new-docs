@@ -1,7 +1,11 @@
 baseURL: "http://localhost:1313/"
 languageCode: "en-us"
-title: "Hybrid Cloud Patterns"
-theme: "ananke"
+title: Hybrid Cloud Patterns
+theme: "patternfly"
+summaryLength: 20
+paginate: 5
+params:
+  site_logo: hybrid_cloud_patterns.png
 security:
   exec:
     allow: ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^asciidoctor$"]
@@ -10,6 +14,10 @@ markup:
   asciidocExt:
     attributes: {allow-uri-read}
     safeMode: unsafe
+  tableOfContents:
+    startLevel: 1
+    endLevel: 2
+    ordered: false
 
 taxonomies:
   industry: 'industries'
