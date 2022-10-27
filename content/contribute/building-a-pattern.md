@@ -2,7 +2,6 @@
 layout: default
 title: Building a Pattern
 menu: contribute
-draft: true
 weight: 10
 ---
 

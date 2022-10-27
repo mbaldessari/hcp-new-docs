@@ -1,7 +1,6 @@
 ---
 title: "What are Hybrid Cloud Patterns?"
 menu: learn
-draft: true
 weight: 10
 ---
 
