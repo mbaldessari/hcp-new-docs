@@ -1,9 +1,8 @@
 ---
-layout: default
 title: Ideas for Customization
 grand_parent: Patterns
 parent: Ansible Edge GitOps
-nav_order: 6
+weight: 6
 ---
 
 # Ideas for Customization

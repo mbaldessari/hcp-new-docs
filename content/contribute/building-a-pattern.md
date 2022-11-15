@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Building a Pattern
 menu: contribute
 weight: 10

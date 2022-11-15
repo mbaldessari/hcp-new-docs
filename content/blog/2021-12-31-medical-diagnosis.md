@@ -4,7 +4,7 @@ date: 2021-12-31
 title: Medical Diagnosis
 excerpt: A validated pattern for the medical field
 published: true
-tags:
+blog_tags:
 - medical-diagnosis
 - xray
 - validated-pattern

@@ -4,7 +4,7 @@ date: 2022-03-30
 title: Multi-Cloud GitOps
 excerpt: A validated pattern for multi-cluster and/or multi-cloud gitops
 published: true
-tags:
+blog_tags:
 - multi-cloud gitops
 - xray
 - validated-pattern

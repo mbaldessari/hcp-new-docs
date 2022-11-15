@@ -3,8 +3,8 @@ layout: post
 date: 2022-10-12
 title: Multi-cluster GitOps with Provisioning
 excerpt: With validated patterns, you can easily create and configure complex cluster topologies
-published: false
-tags:
+published: true
+blog_tags:
 - acm
 - provisioning
 - patterns

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: RHEL for Edge General Sizing
 parent: Infrastructure
 menu: learn

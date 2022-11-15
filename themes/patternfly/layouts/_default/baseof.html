@@ -4,8 +4,11 @@
     <body>
         <div class="pf-c-page">
         {{- partial "header.html" . -}}
-        {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . -}}
+        {{- block "main" . }}
+        {{- end }}
         </div>
+        <div style="">
+            {{- partial "footer.html" . -}}
+        </div>        
     </body>
 </html>

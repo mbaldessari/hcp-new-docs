@@ -1,9 +1,8 @@
 ---
-layout: default
 title: Troubleshooting
 grand_parent: Patterns
 parent: Ansible Edge GitOps
-nav_order: 7
+weight: 7
 ---
 
 # Troubleshooting

@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Workflow
 menu: learn
 weight: 40

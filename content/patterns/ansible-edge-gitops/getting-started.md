@@ -1,9 +1,8 @@
 ---
-layout: default
 title: Getting Started
 grand_parent: Patterns
 parent: Ansible Edge GitOps
-nav_order: 1
+weight: 1
 ---
 
 # Deploying the Ansible Edge GitOps Pattern

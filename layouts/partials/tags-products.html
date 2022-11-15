@@ -3,15 +3,9 @@
   <hr class="pf-c-divider" />
   <div class="pf-c-panel__main">
     <div class="pf-c-panel__main-body">
-    <ul class="pf-c-list">
       {{ range $name, $taxonomy := .Site.Taxonomies.products }}
-       <li>
-         <a href="{{ "/products/" | relLangURL }}{{ $name | urlize }}">
-           {{- $name | humanize | title  -}}
-         </a>
-       </li>
+        <button class="pf-c-label pf-m-red pf-m-outline" id="products:{{- $name -}}" type="button" onclick="filterSelection(this.id)" style="margin: 5px 0;"><span class="pf-c-label__content">{{- $name | humanize | title  -}}</span></button> 
       {{ end }}
-    </ul>
     </div>
   </div>
 </div>

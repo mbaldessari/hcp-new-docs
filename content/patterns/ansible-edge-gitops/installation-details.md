@@ -1,9 +1,8 @@
 ---
-layout: default
 title: Installation Details
 grand_parent: Patterns
 parent: Ansible Edge GitOps
-nav_order: 2
+weight: 2
 ---
 
 # Installation Details

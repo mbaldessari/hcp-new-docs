@@ -1,9 +1,8 @@
 ---
-layout: default
 title: OpenShift Virtualization
 grand_parent: Patterns
 parent: Ansible Edge GitOps
-nav_order: 5
+weight: 5
 ---
 
 # OpenShift Virtualization

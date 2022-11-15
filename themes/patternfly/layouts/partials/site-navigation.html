@@ -2,7 +2,8 @@
   {{ if .Site.Menus.main }}
     <ul class="pf-c-nav__list">
       {{ range .Site.Menus.main }}
-      <li class="pf-c-nav__item">
+
+      <li class="pf-c-nav__item {{ if hasPrefix $.Page.RelPermalink .URL }}pf-m-current{{ end }}">
         <a class="pf-c-nav__link" href="{{ .URL }}" title="{{ .Title }}">
           {{ .Name }}
         </a>

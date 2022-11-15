@@ -28,7 +28,7 @@
             </h1>
             <div class="pf-c-content">
               <p>{{ .Date | time.Format ":date_long" }}</p>
-              {{ range .Params.tags }}
+              {{ range .Params.blog_tags }}
                 <span class="pf-c-label pf-m-orange">
                   <span class="pf-c-label__content">{{ . }}</span>
                 </span>

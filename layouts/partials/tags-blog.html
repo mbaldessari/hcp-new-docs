@@ -3,10 +3,10 @@
   <hr class="pf-c-divider" />
   <div class="pf-c-panel__main">
     <div class="pf-c-panel__main-body">
-    <ul class="pf-c-list">
-      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    <ul class="pf-c-list pf-m-plain">
+      {{ range $name, $taxonomy := .Site.Taxonomies.blog_tags }}
        <li>
-         <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">
+         <a class="pf-c-label pf-m-orange" href="{{ "/blog-tags/" | relLangURL }}{{ $name | urlize }}">
            {{- $name -}}
          </a>
        </li>

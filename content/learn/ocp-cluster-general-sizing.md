@@ -1,5 +1,4 @@
 ---
-layout: default
 title: OpenShift General Sizing
 parent: Infrastructure
 menu: learn

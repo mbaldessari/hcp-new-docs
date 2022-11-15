@@ -4,7 +4,7 @@ date: 2022-07-15
 title: Push or Pull?
 excerpt: Considerations on Push and Pull in change management systems
 published: true
-tags:
+blog_tags:
 - ansible-edge-gitops
 - patterns
 - GitOps

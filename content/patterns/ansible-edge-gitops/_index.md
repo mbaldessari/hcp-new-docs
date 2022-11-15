@@ -1,11 +1,16 @@
 ---
-layout: default
 title: Ansible Edge GitOps
 parent: Patterns
 icon: ansible.jpg
 summary: This pattern uses OpenShift-based Ansible Automated Platform deployment and OpenShift Virtualization to simulate the Edge environment for VMs.
 has_children: true
-nav_order: 1
+weight: 1
+products:
+- Red Hat OpenShift Container Platform
+- OpenShift Virtualization 
+- Red Hat Ansible Automation Platform
+industries:
+- Chemical
 ---
 
 Organizations are interested in accelerating their deployment speeds and improving delivery quality in their Edge environments, where many devices may not fully or even partially embrace the GitOps philosophy. Further, there are VMs and other devices that can and should be managed with Ansible. This pattern explores some of the possibilities of using an OpenShift-based Ansible Automated Platform deployment and managing Edge devices, based on work done with a partner in the Chemical space.

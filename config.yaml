@@ -3,9 +3,9 @@ languageCode: "en-us"
 title: Hybrid Cloud Patterns
 theme: "patternfly"
 summaryLength: 20
-paginate: 5
+paginate: 6
 params:
-  site_logo: hybrid_cloud_patterns.png
+  site_logo: /images/hybrid_cloud_patterns.png
 security:
   exec:
     allow: ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^asciidoctor$"]
@@ -22,7 +22,7 @@ markup:
 taxonomies:
   industry: 'industries'
   product: 'products'
-  tag: 'tags'
+  blog_tag: 'blog_tags'
 
 sectionPagesMenu: main
 

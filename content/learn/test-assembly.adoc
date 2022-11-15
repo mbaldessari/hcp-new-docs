@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Test Assembly
 menu: learn
 weight: 60

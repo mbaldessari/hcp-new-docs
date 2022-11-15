@@ -1,5 +1,4 @@
 ---
-layout: default
 title: FAQ
 menu: learn
 weight: 50
