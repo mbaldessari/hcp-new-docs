@@ -3,6 +3,7 @@ function filterSelection(filter) {
     var filterdivs = [];
     var primarytags;
     var tagids;
+    var patterncount = 0;
     // Enable / disable the tag that was clicked
     var primarytag = document.getElementById(filter);
     if (primarytag) {
@@ -28,8 +29,12 @@ function filterSelection(filter) {
         // If no "active-tags" are set, show everything.
         if (tagids.every((elem) => getAttrs(div).includes(elem)) || tagids.length === 0) {
             div.style.display = "grid";
+            // Increase the pattern count
+            patterncount++;
         }
     });
+    // Set the pattern count in the HTML
+    document.getElementById("pattern-count").textContent = patterncount;
 }
 
 // Function to extract the ids only from the array of active-tag elements
