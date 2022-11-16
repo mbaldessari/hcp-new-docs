@@ -1,6 +1,6 @@
 baseURL: "https://docs.acksyn.org"
 languageCode: "en-us"
-title: Hybrid Cloud Patterns
+title: Hybrid Cloud Patterns test
 theme: "patternfly"
 summaryLength: 20
 paginate: 6
