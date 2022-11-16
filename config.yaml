@@ -1,4 +1,4 @@
-baseURL: "https://mbaldessari.github.io/hcp-new-docs"
+baseURL: "https://docs.acksyn.org"
 languageCode: "en-us"
 title: Hybrid Cloud Patterns
 theme: "patternfly"
